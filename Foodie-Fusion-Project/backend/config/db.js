@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://dheerajsingh54785:Ald1208@foodie-fusion.2cajx.mongodb.net/?retryWrites=true&w=majority&appName=Foodie-Fusion";
+const MONGO_URI = process.env.MONGO_URI 
  export const connectDB = async () => {
     try {
         const conn = await mongoose.connect(MONGO_URI);
